@@ -6,11 +6,11 @@
     <title>מלון שרדונה - חופשת בוטיק כפרית למהדרין</title>
     <style>
         :root {
-            --primary: #1e3625; /* ירוק חורש כפרי עמוק */
-            --secondary: #c9a66b; /* זהב חיטה ויין */
-            --wood: #4a3728; /* חום עץ טבעי */
+            --primary: #1e3625; 
+            --secondary: #c9a66b; 
+            --wood: #4a3728; 
             --text: #2d332f;
-            --light: #f5f7f5; /* רקע ירקרק-רך נקי */
+            --light: #f5f7f5; 
         }
         
         * {
@@ -64,8 +64,7 @@
         }
 
         .hero {
-            /* מותאם בדיוק ל-hero.jpg */
-            background: linear-gradient(rgba(30, 54, 37, 0.65), rgba(30, 54, 37, 0.65)), url('images/hero.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(30, 54, 37, 0.65), rgba(30, 54, 37, 0.65)), url('images/hero.jpeg') no-repeat center center/cover;
             height: 85vh;
             display: flex;
             align-items: center;
@@ -217,7 +216,6 @@
             margin-bottom: 15px;
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -335,19 +333,17 @@
     <h2 class="section-title">הסוויטות והמתחמים שלנו</h2>
     <section class="grid-container">
         
-        <!-- מותאם ל-suite1.jpg -->
         <div class="card">
-            <div class="card-img" style="background-image: url('images/suite1.jpg');"></div>
+            <div class="card-img" style="background-image: url('images/suite1.jpeg');"></div>
             <div class="card-info">
                 <h3>סוויטות עצמון המשפחתיות</h3>
-                <p>יחידות ענק של כ-100 מ"ר הבנויות מעץ ואבן כפרית משובחת. הסוויטה מוקפת גינה פרטית ירוקה ומציעה 2 חדרי שינה מרווחים, יחידת הורים מפוארת WITH ג'קוזי פרטי, גלריית לינה רחבה לילדים, סלון רחב ידיים ומרפסת שמש מול הנוף.</p>
+                <p>יחידות ענק של כ-100 מ"ר הבנויות מעץ ואבן כפרית משובחת. הסוויטה מוקפת גינה פרטית ירוקה ומציעה 2 חדרי שינה מרווחים, יחידת הורים מפוארת עם ג'קוזי פרטי, גלריית לינה רחבה לילדים, סלון רחב ידיים ומרפסת שמש מול הנוף.</p>
                 <p><strong>מתאים ל:</strong> עד 10 נפשות</p>
             </div>
         </div>
 
-        <!-- מותאם ל-suite2.jpg -->
         <div class="card">
-            <div class="card-img" style="background-image: url('images/suite2.jpg');"></div>
+            <div class="card-img" style="background-image: url('images/suite2.jpeg');"></div>
             <div class="card-info">
                 <h3>סוויטות תבור היוקרתיות</h3>
                 <p>סוויטות בוטיק של כ-50 מ"ר המציעות חמימות כפרית ואלגנטיות. פתח הסוויטה מוביל ישירות למדשאות המלון, והיא כוללת חדר שינה זוגי מפנק, גלריית שינה נפרדת לילדים, מטבחון מאובזר, ופינת ישיבה חיצונית מוצלת ופסטורלית.</p>
@@ -355,9 +351,8 @@
             </div>
         </div>
 
-        <!-- מותאם ל-pool.jpg -->
         <div class="card">
-            <div class="card-img" style="background-image: url('images/pool.jpg');"></div>
+            <div class="card-img" style="background-image: url('images/pool.jpeg');"></div>
             <div class="card-info">
                 <h3>מתחם הבריכה והספא</h3>
                 <p>בריכת שחייה מעוצבת ונקייה לצד מתחם ג'קוזי זרמים חם ומפנק. המתחם סגור ומציע שעות רחצה נפרדות לחלוטין ומתוזמנות בקפידה לגברים, נשים ומשפחות, לשמירה מוחלטת על פרטיות וצניעות.</p>
@@ -365,9 +360,8 @@
             </div>
         </div>
 
-        <!-- מותאם ל-garden.jpg -->
         <div class="card">
-            <div class="card-img" style="background-image: url('images/garden.jpg');"></div>
+            <div class="card-img" style="background-image: url('images/garden.jpeg');"></div>
             <div class="card-info">
                 <h3>מרחבי דשא ופינות ישיבה</h3>
                 <p>מדשאות ענק ירוקות הנפרשות בין הסוויטות, ערסלים מפנקים בין העצים, ספסלי עץ כפריים מול הנוף הגלילי הפתוח ופינות זולה מוצלות שמעניקות תחושת שלווה, חופש וחיבור מושלם לטבע הגלילי.</p>
@@ -384,7 +378,6 @@
         </div>
     </section>
 
-    <!-- Booking Modal -->
     <div id="bookingModal" class="modal" onclick="closeModalOutside(event)">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
