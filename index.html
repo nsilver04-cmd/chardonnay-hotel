@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מלון שרדונה - חופשת בוטיק כפרית למהדרין</title>
+    <title>מלון שרדונה בוטיק | חופשה כפרית במצפה הושעיה</title>
+    <meta name="description" content="מלון שרדונה (לשעבר קטרון) במצפה הושעיה. חוויית אירוח יוקרתית לציבור הדתי והחרדי בגליל התחתון. סוויטות מרווחות, מדשאות ענק פסטורליות ובריכה פרטית למהדרין.">
     <style>
         :root {
             --primary: #1e3625; 
@@ -11,6 +12,7 @@
             --wood: #4a3728; 
             --text: #2d332f;
             --light: #f5f7f5; 
+            --white: #ffffff;
         }
         
         * {
@@ -45,10 +47,10 @@
         }
 
         .logo {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: bold;
             color: var(--primary);
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
         .logo span {
@@ -64,8 +66,8 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(30, 54, 37, 0.65), rgba(30, 54, 37, 0.65)), url('images/hero.jpeg') no-repeat center center/cover;
-            height: 85vh;
+            background: linear-gradient(rgba(30, 54, 37, 0.55), rgba(30, 54, 37, 0.55)), url('images/hero.jpeg') no-repeat center center/cover;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -76,20 +78,20 @@
         }
 
         .hero-content h1 {
-            font-size: 52px;
+            font-size: 48px;
             margin-bottom: 20px;
-            font-weight: 800;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
 
         .hero-content p {
-            font-size: 22px;
+            font-size: 20px;
             margin-bottom: 30px;
-            max-width: 700px;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
             color: #f4f6f4;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
         }
 
         .btn {
@@ -104,24 +106,24 @@
             cursor: pointer;
             border: none;
             font-size: 16px;
-            box-shadow: 0 4px 15px rgba(201, 166, 107, 0.3);
+            box-shadow: 0 4px 15px rgba(201, 166, 107, 0.2);
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(201, 166, 107, 0.5);
+            box-shadow: 0 6px 20px rgba(201, 166, 107, 0.4);
         }
 
         .about-section {
             padding: 80px 20px;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
 
         .about-section h2 {
             color: var(--primary);
-            font-size: 36px;
+            font-size: 32px;
             margin-bottom: 25px;
             position: relative;
             display: inline-block;
@@ -129,8 +131,8 @@
 
         .about-section h2::after {
             content: '';
-            width: 60px;
-            height: 3px;
+            width: 50px;
+            height: 2px;
             background-color: var(--secondary);
             position: absolute;
             bottom: -10px;
@@ -142,18 +144,20 @@
             font-size: 18px;
             color: #4a524d;
             margin-top: 20px;
+            text-align: justify;
+            text-align-last: center;
         }
 
         .section-title {
             text-align: center;
-            font-size: 32px;
+            font-size: 30px;
             color: var(--primary);
             margin: 40px 0 10px;
         }
 
         .grid-container {
             max-width: 1200px;
-            margin: 40px auto 80px;
+            margin: 40px auto 60px;
             padding: 0 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -162,15 +166,16 @@
 
         .card {
             background: white;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             transition: 0.3s;
             border: 1px solid #e1e6e2;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
         }
 
         .card-img {
@@ -185,14 +190,37 @@
 
         .card-info h3 {
             color: var(--wood);
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin-bottom: 12px;
         }
 
         .card-info p {
             color: #555;
             font-size: 16px;
             margin-bottom: 15px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 10px;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .features-list li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-right: 18px;
+        }
+
+        .features-list li::before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            font-size: 18px;
+            line-height: 1;
         }
 
         .kosher-banner {
@@ -203,17 +231,43 @@
         }
 
         .kosher-content {
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
-            border: 1px solid var(--secondary);
-            padding: 30px;
+            border: 1px solid rgba(201, 166, 107, 0.4);
+            padding: 35px;
             border-radius: 4px;
         }
 
         .kosher-content h3 {
             color: var(--secondary);
-            font-size: 26px;
+            font-size: 24px;
             margin-bottom: 15px;
+        }
+
+        .faq-section {
+            max-width: 850px;
+            margin: 50px auto 80px;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid #e1e6e2;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 22px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+            font-size: 16px;
         }
 
         .modal {
@@ -224,7 +278,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0,0,0,0.5);
             align-items: center;
             justify-content: center;
         }
@@ -232,13 +286,13 @@
         .modal-content {
             background-color: white;
             padding: 40px;
-            border-radius: 8px;
+            border-radius: 6px;
             max-width: 500px;
             width: 90%;
             position: relative;
             text-align: right;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border-top: 6px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            border-top: 5px solid var(--primary);
         }
 
         .close-btn {
@@ -257,7 +311,7 @@
         .modal h2 {
             color: var(--primary);
             margin-bottom: 15px;
-            font-size: 26px;
+            font-size: 24px;
         }
 
         .form-group {
@@ -266,14 +320,15 @@
 
         .form-group label {
             display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 15px;
         }
 
         .form-group input, .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 16px;
         }
@@ -287,7 +342,7 @@
             background-color: #122116;
             color: #92a396;
             text-align: center;
-            padding: 40px 20px;
+            padding: 45px 20px;
             font-size: 15px;
         }
 
@@ -298,7 +353,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 36px; }
+            .hero-content h1 { font-size: 34px; }
             .hero-content p { font-size: 18px; }
             .nav-container { flex-direction: column; gap: 10px; text-align: center; }
             .nav-phone { margin-left: 0; margin-bottom: 10px; display: block; }
@@ -319,15 +374,15 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>חופשת בוטיק כפרית בהושעיה</h1>
-            <p>מלון שרדונה (לשעבר מלון קטרון) מזמין אתכם לחוויית נופש יוקרתית ושלווה בגליל התחתון. סוויטות פאר מעץ ואבן הטובלות במרחבי דשא עצומים, פינות ישיבה פסטורליות ואווירה רוחנית מרוממת למהדרין.</p>
-            <button onclick="openModal()" class="btn">להזמנת חופשה כפרית</button>
+            <h1>מלון בוטיק שרדונה בשפלת הגליל</h1>
+            <p>מלון שרדונה (לשעבר מלון קטרון) מציע חוויית נופש שלווה ואינטימית במצפה הושעיה. מתחם אירוח כפרי המשלב סוויטות בנויות עץ ואבן, מרחבי גינון מטופחים והתאמה מלאה לציבור שומר המצוות.</p>
+            <button onclick="openModal()" class="btn">לתיאום והזמנת אירוח</button>
         </div>
     </section>
 
     <section class="about-section">
-        <h2>מרחבים ירוקים, שלווה ונשמה גלילית</h2>
-        <p>בלב היישוב הפסטורלי מצפה הושעיה, שוכן מלון הבוטיק שרדונה. גולת הכותרת של המלון היא מרחבי הטבע המטורפים שלו: מדשאות ענק מטופחות הנפרשות לכל עבר, חורש גלילי טבעי העוטף את המקום, ושלל פינות ישיבה כפריות, ערסלים וזולות מוצלות מול נוף כרמים ועמקים עוצר נשימה. כאן כל משפחה יכולה למצוא את הפינה השקטה שלה, לנשום אוויר הרים צלול וליהנות מפרטיות מוחלטת ומעונג שבת אמיתי.</p>
+        <h2>אירוח גלילי פסטורלי, מרחבים ופרטיות</h2>
+        <p>בלב היישוב הדתי מצפה הושעיה, מול נוף כרמים ועמקים פתוח, שוכן מלון הבוטיק שרדונה. המתחם תוכנן מתוך מחשבה על נוחות ופרטיות משפחתית, ומאופיין במדשאות רחבות ידיים, צמחייה עשירה ופינות ישיבה מוצלות הפזורות בין היחידות. כאן תוכלו ליהנות מאוויר הרים צלול, שקט מוחלט וסביבה רגיעה המאפשרת מנוחה אמיתית ועונג שבת כהלכתו.</p>
     </section>
 
     <h2 class="section-title">הסוויטות והמתחמים שלנו</h2>
@@ -337,8 +392,14 @@
             <div class="card-img" style="background-image: url('images/suite1.jpeg');"></div>
             <div class="card-info">
                 <h3>סוויטות עצמון המשפחתיות</h3>
-                <p>יחידות ענק של כ-100 מ"ר הבנויות מעץ ואבן כפרית משובחת. הסוויטה מוקפת גינה פרטית ירוקה ומציעה 2 חדרי שינה מרווחים, יחידת הורים מפוארת עם ג'קוזי פרטי, גלריית לינה רחבה לילדים, סלון רחב ידיים ומרפסת שמש מול הנוף.</p>
-                <p><strong>מתאים ל:</strong> עד 10 נפשות</p>
+                <p>יחידות אירוח רחבות ידיים של כ-100 מ"ר, המשלבות בניית עץ ואבן כפרית. הסוויטות מוקפות בגינה פרטית ומציעות מענה מושלם למשפחות מורחבות וקבוצות.</p>
+                <ul class="features-list">
+                    <li>שני חדרי שינה סגורים ומרווחים</li>
+                    <li>גלריית לינה ייעודית לילדים</li>
+                    <li>חדר רחצה מרכזי וג'קוזי פרטי</li>
+                    <li>סלון אירוח גדול ומרפסת שמש לחצר</li>
+                </ul>
+                <p style="margin-top:15px;"><strong>מתאים ל:</strong> עד 10 נפשות</p>
             </div>
         </div>
 
@@ -346,8 +407,14 @@
             <div class="card-img" style="background-image: url('images/suite2.jpeg');"></div>
             <div class="card-info">
                 <h3>סוויטות תבור היוקרתיות</h3>
-                <p>סוויטות בוטיק של כ-50 מ"ר המציעות חמימות כפרית ואלגנטיות. פתח הסוויטה מוביל ישירות למדשאות המלון, והיא כוללת חדר שינה זוגי מפנק, גלריית שינה נפרדת לילדים, מטבחון מאובזר, ופינת ישיבה חיצונית מוצלת ופסטורלית.</p>
-                <p><strong>מתאים ל:</strong> זוג + 3 ילדים</p>
+                <p>סוויטות בעיצוב אירופאי קלאסי וחם, המשתרעות על פני כ-50 מ"ר. חזית הסוויטה נפתחת ישירות אל המדשאות המרכזיות של המתחם.</p>
+                <ul class="features-list">
+                    <li>חדר שינה זוגי מרווח ומפנק</li>
+                    <li>גלריית לינה נפרדת לילדים</li>
+                    <li>מטבחון מאובזר ופינת אוכל משפחתית</li>
+                    <li>פינת ישיבה חיצונית מקורה ופרטית</li>
+                </ul>
+                <p style="margin-top:15px;"><strong>מתאים ל:</strong> זוג + 3 ילדים</p>
             </div>
         </div>
 
@@ -355,17 +422,29 @@
             <div class="card-img" style="background-image: url('images/pool.jpeg');"></div>
             <div class="card-info">
                 <h3>מתחם הבריכה והספא</h3>
-                <p>בריכת שחייה מעוצבת ונקייה לצד מתחם ג'קוזי זרמים חם ומפנק. המתחם סגור ומציע שעות רחצה נפרדות לחלוטין ומתוזמנות בקפידה לגברים, נשים ומשפחות, לשמירה מוחלטת על פרטיות וצניעות.</p>
-                <p><strong>מתחם:</strong> נפרד למהדרין</p>
+                <p>בריכת שחייה בנויה לצד מתחם ג'קוזי זרמים מקורה. הבריכה מתוחזקת ברמת ניקיון גבוהה ומציעה פתרון אידיאלי לימי הקיץ.</p>
+                <ul class="features-list">
+                    <li>שעות רחצה נפרדות לחלוטין לנשים ולגברים</li>
+                    <li>אפשרות לתיאום שעות משפחתיות מראש</li>
+                    <li>מתחם סגור ומגודר להבטחת פרטיות וצניעות</li>
+                    <li>מרפסת דק עם מיטות שיזוף ופינות צל</li>
+                </ul>
+                <p style="margin-top:15px;"><strong>מתחם:</strong> נפרד למהדרין</p>
             </div>
         </div>
 
         <div class="card">
             <div class="card-img" style="background-image: url('images/garden.jpeg');"></div>
             <div class="card-info">
-                <h3>מרחבי דשא ופינות ישיבה</h3>
-                <p>מדשאות ענק ירוקות הנפרשות בין הסוויטות, ערסלים מפנקים בין העצים, ספסלי עץ כפריים מול הנוף הגלילי הפתוח ופינות זולה מוצלות שמעניקות תחושת שלווה, חופש וחיבור מושלם לטבע הגלילי.</p>
-                <p><strong>חוויה:</strong> טבע ורוגע משפחתי</p>
+                <h3>חצר המתחם והמדשאות</h3>
+                <p>שטחי הגן והפיתוח סביב היחידות הם גולת הכותרת של המלון, ומאפשרים מרחב נשימה ותנועה חופשית לילדים ולמבוגרים.</p>
+                <ul class="features-list">
+                    <li>מרבדי דשא ירוקים ומטופחים לאורך כל השנה</li>
+                    <li>ערסלים ופינות ישיבה מוצלות תחת העצים</li>
+                    <li>ספסלי תצפית מול כרמי הגליל התחתון</li>
+                    <li>תאורת גן לילית נעימה לטיול ערב רגוע</li>
+                </ul>
+                <p style="margin-top:15px;"><strong>חוויה:</strong> טבע, שלווה ומרחב משפחתי</p>
             </div>
         </div>
 
@@ -373,30 +452,46 @@
 
     <section class="kosher-banner">
         <div class="kosher-content">
-            <h3>סטנדרט כשרות מהודר ללא פשרות</h3>
-            <p>המטבח וחדר האוכל פועלים תחת פיקוח הדוק עם מוצרים בכשרות מהודרת (בד"ץ לנדא, רובין, ושארית ישראל). במתחם המלון בית כנסת קבוע ומפואר עם ספרי תורה, מקווה טהרה ועירוב מהודר. עזיבת החדרים במוצאי שבת הינה שעה וחצי לאחר צאת השבת.</p>
+            <h3>סטנדרט כשרות ואירוח לשבת</h3>
+            <p>המטבח וחדר האוכל פועלים בפיקוח הדוק ומבוססים על חומרי גלם בכשרות מהודרת (בד"ץ לנדא, רובין ושארית ישראל). לרשות האורחים עומד בית כנסת מפואר וממוזג במתחם, מקווה טהרה ועירוב היקפי תקין. בשבתות וחגים, פינוי הסוויטות מתבצע שעה וחצי לאחר צאת השבת, ללא לחץ וללא תוספת תשלום.</p>
+        </div>
+    </section>
+
+    <h2 class="section-title">מידע שימושי לאורחים</h2>
+    <section class="faq-section">
+        <div class="faq-item">
+            <div class="faq-question">אילו כשרויות זמינות בארוחות של המלון?</div>
+            <div class="faq-answer">כל המוצרים, הבשרים וחומרי הגלם במטבח המלון הם תחת השגחה קפדנית ובכשרויות המהודרות ביותר (בד"ץ לנדא, בד"ץ רובין ובד"ץ שארית ישראל), על מנת לאפשר לכל אורח להתארח בראש שקט לחלוטין.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">מהן שעות קבלת ופינוי החדרים?</div>
+            <div class="faq-answer">בימי חול, קבלת החדרים מתחילה בשעה 15:00 ופינוי החדרים הוא עד השעה 11:00. בשבתות, על מנת לאפשר חוויית שבת שלמה ונינוחה, הפינוי מותר עד שעה וחצי לאחר צאת השבת.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">האם האירוח מתאים לעריכת שבתות חתן או אירועים משפחתיים?</div>
+            <div class="faq-answer">בהחלט. מבנה המתחם, חדר האוכל המשותף ומרחבי החצר מתאימים בצורה אידיאלית לאירוח קבוצות ומשפחות מורחבות החוגגות שבתות בר מצווה, שבתות חתן או מפגשים משפחתיים פרטיים.</div>
         </div>
     </section>
 
     <div id="bookingModal" class="modal" onclick="closeModalOutside(event)">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2>נשמח להתאים לכם חופשה</h2>
-            <p>נציגי השירות של מלון שרדונה בוטיק ישמחו לחזור אליכם עם הצעה מותאמת אישית להרכב המשפחה שלכם.</p>
+            <h2>נשמח לתאם את האירוח שלכם</h2>
+            <p>אנא השאירו פרטים ונציג מטעם מלון שרדונה בוטיק יחזור אליכם בהקדם להתאמת הסוויטה והרכב הנופש.</p>
             <form onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">שם מלא:</label>
                     <input type="text" id="name" required placeholder="משפחת ישראלי">
                 </div>
                 <div class="form-group">
-                    <label for="phone">טלפון ליצירת קשר:</label>
+                    <label for="phone">מספר טלפון:</label>
                     <input type="tel" id="phone" required placeholder="050-0000000">
                 </div>
                 <div class="form-group">
-                    <label for="message">סוג הסוויטה המבוקשת, תאריכים ומספר נפשות:</label>
-                    <textarea id="message" placeholder="נשמח לקבל הצעה לשבת חתן / חופשה משפחתית..."></textarea>
+                    <label for="message">פרטים נוספים (תאריכים מבוקשים, מספר נפשות):</label>
+                    <textarea id="message" placeholder="נשמח לקבל הצעה לחופשה משפחתית / שבת חתן..."></textarea>
                 </div>
-                <button type="submit" class="btn" style="width: 100%;">שליחת בקשה לנציג</button>
+                <button type="submit" class="btn" style="width: 100%;">שליחת פנייה לנציג המלון</button>
             </form>
         </div>
     </div>
@@ -424,7 +519,7 @@
 
         function handleSubmit(event) {
             event.preventDefault();
-            alert('פנייתכם התקבלה בהצלחה במערכת מלון שרדונה. נציג שירות יחזור אליכם בהקדם לתכנון האירוח והחופשה הכפרית שלכם!');
+            alert('פנייתכם התקבלה במערכת המלון. נציג שירות יחזור אליכם בהקדם לתיאום האירוח.');
             closeModal();
             event.target.reset();
         }
